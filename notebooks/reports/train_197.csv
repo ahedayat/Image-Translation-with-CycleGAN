@@ -1,0 +1,1 @@
+,epoch,batch_id,batch_num,learning_rate,loss_id_x,loss_id_y,loss_identity,loss_gan_y2x,loss_gan_x2y,loss_gan,loss_cycle_x,loss_cycle_y,loss_cycle,loss_gen,loss_disc_real_x,loss_disc_fake_x,loss_disc_real_y,loss_disc_fake_y,loss_disc
