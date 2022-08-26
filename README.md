@@ -205,8 +205,8 @@ $‌$ \ell _{cyc}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \| G_
 
 $‌$ \ell _{identity}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \| G_{H}(h) - h \|_{1} )} + \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {( \| G_{Z}(z) - z \|_{1} )} $$
 
-The total loss function is as follow:
-
+<p>The total loss function is as follow:</p>
+🇹
 $‌$ {G_{H}, G_{Z}, D_{H}, D_{Z}, H, Z} $$
 
 The two $$ G_H $$ and $$ G_Z $$ mappings are obtained as follows:
