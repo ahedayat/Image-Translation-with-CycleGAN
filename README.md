@@ -209,7 +209,6 @@ $${ \ell _{identity}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \|
 
 $$ {G_{H}, G_{Z}, D_{H}, D_{Z}, H, Z} $$
 
-The two $G_H$ and $G_Z$ mappings are obtained as follows:
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+<p>The two G<sub>H</sub> and G<sub>Z</sub> mappings are obtained as follows:</p
 
 $$ G_H, G_Z= \underset{G_H, G_Z}{\arg\min}{ \underset{D_H, D_Z}{\max}{\ell (G_H, G_Z, D_H, D_Z, H, Z)} } $$
