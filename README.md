@@ -209,6 +209,6 @@ $${ \ell _{identity}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \|
 
 $$ {G_{H}, G_{Z}, D_{H}, D_{Z}, H, Z} $$
 
-<p>The two G<sub>H</sub> and G<sub>Z</sub> mappings are obtained as follows:</p
+<p>The two G<sub>H</sub> and G<sub>Z</sub> mappings are obtained as follows:</p>
 
 $$ G_H, G_Z= \underset{G_H, G_Z}{\arg\min}{ \underset{D_H, D_Z}{\max}{\ell (G_H, G_Z, D_H, D_Z, H, Z)} } $$
