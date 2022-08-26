@@ -207,8 +207,8 @@ $‌$ \ell _{identity}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( 
 
 The total loss function is as follow:
 
-$‌$ G_{H}, G_{Z}, D_{H}, D_{Z}, H, Z $$
+$‌$ {G_{H}, G_{Z}, D_{H}, D_{Z}, H, Z} $$
 
-The two $ G_H $ and $ G_Z $ mappings are obtained as follows:
+The two $$ G_H $$ and $$ G_Z $$ mappings are obtained as follows:
 
 $$ G_H, G_Z= \underset{G_H, G_Z}{\arg\min}{ \underset{D_H, D_Z}{\max}{\ell (G_H, G_Z, D_H, D_Z, H, Z)} } $$
