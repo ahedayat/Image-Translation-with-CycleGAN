@@ -187,7 +187,7 @@ $${ \ell_{GAN}(G_{H},D_{H},H,Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {[\log{D_{
     </li>
 </ul>
 
-$$ { \ell_{GAN}(G_{Z},D_{Z},H,Z) = \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {[\log{D_{Z}{(z)}}]} + \mathbb{E}_{{h}\sim{p_{data}{(h)}}}{[\log ({1-D_{Z}({G_{H}(H)})})]} }$$
+$$ { \ell_{GAN}(G_{Z},D_{Z},H,Z) = E_{{z}\sim{p_{data}{(z)}}} {[\log{D_{Z}{(z)}}]} + E_{{h}\sim{p_{data}{(h)}}}{[\log ({1-D_{Z}({G_{H}(H)})})]} }$$
 
 <ul>
     <li>
@@ -203,7 +203,7 @@ $${ \ell_{cyc}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \| G_{H}
     </li>
 </ul>
 
-$${ \ell_{identity}(G_H, G_Z, H, Z) = E_{{h}\sim{p_{data}{(h)}}} {( \| G_{H}(h) - h \|_{1} )} + \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {( \| G_{Z}(z) - z \|_{1} )} } $$
+$${ \ell_{identity}(G_H, G_Z, H, Z) = E_{{h}\sim{p_{data}{(h)}}} {( \| G_{H}(h) - h \|_{1} )} + E_{{z}\sim{p_{data}{(z)}}} {( \| G_{Z}(z) - z \|_{1} )} } $$
 
 <p>The total loss function is as follow:</p>
 
