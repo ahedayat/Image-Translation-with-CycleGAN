@@ -187,7 +187,7 @@ $‌$ \ell _{GAN}(G_{H},D_{H},H,Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {[\log{
     </li>
 </ul>
 
-$‌$ \ell _{GAN}(G_{Z},D_{Z},H,Z) = \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {[\log{D_{Z}{(z)}}]} + \mathbb{E}_{{h}\sim{p_{data}{(h)}}}{[\log ({1-D_{Z}({G_{H}(H)})})]}  $$
+$$ { \ell _{GAN}(G_{Z},D_{Z},H,Z) = \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {[\log{D_{Z}{(z)}}]} + \mathbb{E}_{{h}\sim{p_{data}{(h)}}}{[\log ({1-D_{Z}({G_{H}(H)})})]} }$$
 
 <ul>
     <li>
@@ -195,7 +195,7 @@ $‌$ \ell _{GAN}(G_{Z},D_{Z},H,Z) = \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {[\log{
     </li>
 </ul>
 
-$‌$ \ell _{cyc}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \| G_{H}(G_{Z}(H)) - h \|_{1} )} + \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {( \| G_{Z}(G_{H}(Z)) - z \|_{1} )} $$
+$‌${ \ell _{cyc}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \| G_{H}(G_{Z}(H)) - h \|_{1} )} + \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {( \| G_{Z}(G_{H}(Z)) - z \|_{1} )} } $$
 
 <ul>
     <li>
