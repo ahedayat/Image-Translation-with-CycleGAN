@@ -203,7 +203,7 @@ $‌ \ell _{cyc}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \| G_{
     </li>
 </ul>
 
-$‌ \ell _{identity}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \| G_{H}(h) - h \|_{1} )} + \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {( \| G_{Z}(z) - z \|_{1} )}$
+$‌ L_{identity}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \| G_{H}(h) - h \|_{1} )} + \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {( \| G_{Z}(z) - z \|_{1} )}$
 
 The total loss function is as follow:
 
