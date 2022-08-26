@@ -187,7 +187,7 @@ $‌$ \ell _{GAN}(G_{H},D_{H},H,Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {[\log{
     </li>
 </ul>
 
-$‌$ \ell _{GAN}(G_{Z},D_{Z},H,Z) = \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {[\log{D_{Z}{(z)}}]} + \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {[\log ({1-D_{Z}({G_{H}(H)})})]} $$
+$‌$ \ell _{GAN}(G_{Z},D_{Z},H,Z) = \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {[\log{D_{Z}{(z)}}]} + \mathbb{E}_{{h}\sim{p_{data}{(h)}}}  $$
 
 <ul>
     <li>
