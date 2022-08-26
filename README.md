@@ -207,7 +207,7 @@ $‌$ \ell _{identity}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( 
 
 The total loss function is as follow:
 
-$‌$ \ell (G_{H}, G_{Z}, D_H, D_Z, H, Z) $$
+$‌$ G_{H}, G_{Z}, D_{H}, D_{Z}, H, Z $$
 
 The two $ G_H $ and $ G_Z $ mappings are obtained as follows:
 
