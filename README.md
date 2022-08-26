@@ -211,4 +211,4 @@ $$ {\ell (G_H, G_Z, D_H, D_Z, H, Z) = \ell_{GAN}(G_{H},D_{H},H,Z) + \ell_{GAN}(G
 
 <p>The two G<sub>H</sub><sup>*</sup> and G<sub>Z</sub><sup>*</sup> mappings are obtained as follows:</p>
 
-$$ G_H, G_Z= \underset{G_H, G_Z}{\arg\min}{ \underset{D_H, D_Z}{\max}{\ell (G_H, G_Z, D_H, D_Z, H, Z)} } $$
+$$ G_H^*, G_Z^* = \underset{G_H, G_Z}{\arg\min}{ \underset{D_H, D_Z}{\max}{\ell (G_H, G_Z, D_H, D_Z, H, Z)} } $$
