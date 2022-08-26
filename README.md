@@ -175,7 +175,7 @@ and then obtain the final loss function.
     </li>
 </ul>
 
-$${ \ell_{GAN}(G_{H},D_{H},H,Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {[\log{D_{H}{(h)}}]} + \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {[\log ({1-D_{H}({G_{Z}(Z)})})]} }$$
+$${ \ell_{GAN}(G_{H},D_{H},H,Z) = E_{{h}\sim{p_{data}{(h)}}} {[\log{D_{H}{(h)}}]} + E_{{z}\sim{p_{data}{(z)}}} {[\log ({1-D_{H}({G_{Z}(Z)})})]} }$$
 
 <ul style="list-style-type: none">
     <li>
@@ -195,7 +195,7 @@ $$ { \ell_{GAN}(G_{Z},D_{Z},H,Z) = E_{{z}\sim{p_{data}{(z)}}} {[\log{D_{Z}{(z)}}
     </li>
 </ul>
 
-$${ \ell_{cyc}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( \| G_{H}(G_{Z}(H)) - h \|_{1} )} + \mathbb{E}_{{z}\sim{p_{data}{(z)}}} {( \| G_{Z}(G_{H}(Z)) - z \|_{1} )} } $$
+$${ \ell_{cyc}(G_H, G_Z, H, Z) = E_{{h}\sim{p_{data}{(h)}}} {( | G_{H}(G_{Z}(H)) - h | )} + E_{{z}\sim{p_{data}{(z)}}} {( | G_{Z}(G_{H}(Z)) - z | )} } $$
 
 <ul>
     <li>
