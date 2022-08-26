@@ -195,7 +195,7 @@ $$ { \ell_{GAN}(G_{Z},D_{Z},H,Z) = E_{{z}\sim{p_{data}{(z)}}} {[\log{D_{Z}{(z)}}
     </li>
 </ul>
 
-$${ \ell_{cyc}(G_H, G_Z, H, Z) = E_{{h}\sim{p_{data}{(h)}}} {( | G_{H}(G_{Z}(H)) - h | )} + E_{{z}\sim{p_{data}{(z)}}} {( | G_{Z}(G_{H}(Z)) - z | )} } $$
+$${ \ell_{cyc}(G_H, G_Z, H, Z) = E_{{h}\sim{p_{data}{(h)}}} {[ | G_{H}(G_{Z}(H)) - h | ]} + E_{{z}\sim{p_{data}{(z)}}} {[ | G_{Z}(G_{H}(Z)) - z | ]} } $$
 
 <ul>
     <li>
@@ -203,12 +203,12 @@ $${ \ell_{cyc}(G_H, G_Z, H, Z) = E_{{h}\sim{p_{data}{(h)}}} {( | G_{H}(G_{Z}(H))
     </li>
 </ul>
 
-$${ \ell_{identity}(G_H, G_Z, H, Z) = E_{{h}\sim{p_{data}{(h)}}} {( | G_{H}(h) - h | )} + E_{{z}\sim{p_{data}{(z)}}} {( | G_{Z}(z) - z | )} } $$
+$${ \ell_{identity}(G_H, G_Z, H, Z) = E_{{h}\sim{p_{data}{(h)}}} {[ | G_{H}(h) - h | ]} + E_{{z}\sim{p_{data}{(z)}}} {[ | G_{Z}(z) - z | ]} } $$
 
 <p>The total loss function is as follow:</p>
 
 $$ {\ell (G_H, G_Z, D_H, D_Z, H, Z) = \ell_{GAN}(G_{H},D_{H},H,Z) + \ell_{GAN}(G_{Z},D_{Z},H,Z) + \lambda_{cyc} \ell_{cyc}(G_H, G_Z, H, Z) + \lambda_{identity} \ell_{identity}(G_H, G_Z, H, Z)} $$
 
-<p>The two G<sub>H</sub> and G<sub>Z</sub> mappings are obtained as follows:</p>
+<p>The two G<sub>H</sub><sup>*</sup> and G<sub>Z</sub><sup>*</sup> mappings are obtained as follows:</p>
 
 $$ G_H, G_Z= \underset{G_H, G_Z}{\arg\min}{ \underset{D_H, D_Z}{\max}{\ell (G_H, G_Z, D_H, D_Z, H, Z)} } $$
