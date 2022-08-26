@@ -207,7 +207,7 @@ $‌$ \ell _{identity}(G_H, G_Z, H, Z) = \mathbb{E}_{{h}\sim{p_{data}{(h)}}} {( 
 
 The total loss function is as follow:
 
-$‌$ \ell (G_H, G_Z, D_H, D_Z, H, Z) = \ell _{GAN}(G_{H},D_{H},H,Z) + \ell_{GAN}(G_{Z},D_{Z},H,Z) + \lambda_{cyc} \ell_{cyc}(G_H, G_Z, H, Z) + \lambda_{identity} \ell_{identity}(G_H, G_Z, H, Z) $$
+$‌$ \ell (G_H, G_Z, D_H, D_Z, H, Z) $$
 
 The two $ G_H $ and $ G_Z $ mappings are obtained as follows:
 
