@@ -212,3 +212,161 @@ $$ {\ell (G_H, G_Z, D_H, D_Z, H, Z) = \ell_{GAN}(G_{H},D_{H},H,Z) + \ell_{GAN}(G
 <p>The two G<sub>H</sub> and G<sub>Z</sub> mappings are obtained as follows:</p>
 
 $$ G_{H}, G_{Z} = \underset{G_H, G_Z}{\arg\min}{ \underset{D_H, D_Z}{\max}{\ell (G_H, G_Z, D_H, D_Z, H, Z)} } $$
+
+# Training
+
+<ul>
+    <li>
+        optimizer: <strong>Adam</strong>
+    </li>
+    <li>
+        Learning Rate Scheduler:
+    </li>
+</ul>
+
+<table style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+    <tbody>
+        <tr>
+            <td>
+                <img src="./plots/training/learning_rate.png" alt="Learning Rate Scheduler Plot" style="width: 50rem"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        Hyper-Parameters
+    </li>
+</ul>
+
+<table style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+    <thead>
+        <tr>
+            <th>Hyper-Parameters</th>
+            <th colspan=2>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Epochs</td>
+            <td colspan=2>200</td>
+        </tr>
+        <tr>
+            <td>Batch Size</td>
+            <td colspan=2>16</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Optimizer (Adam)</td>
+            <td>Initial Learning Rate</td>
+            <td>2e-4</td>
+        </tr>
+        <tr>
+            <td>β<sub>1</sub></td>
+            <td>0.5</td>
+        </tr>
+        <tr>
+            <td>β<sub>2</sub></td>
+            <td>0.999</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Loss Coefficients</td>
+            <td>λ<sub>cyc</sub></td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>λ<sub>identity</sub></td>
+            <td>5</td>
+        </tr>
+    </tbody>
+</table>
+
+# Experimental Results
+
+<ul>
+    <li>
+        Loss Functions:
+    </li>
+</ul>
+
+<table style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+    <tbody>
+        <tr>
+            <td>
+                <img src="./plots/training/gen_disc_losses.png" alt="Generator & Discriminator Loss Function" style="width: 50rem"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        Generator Loss Functions in Detail:
+    </li>
+</ul>
+
+<table style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+    <tbody>
+        <tr>
+            <td>
+                <img src="./plots/training/generator_losses.png" alt="GeneratorLoss Functions in Detail" style="width: 50rem"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+# Image Translation Sample
+
+<table style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+    <tbody>
+        <tr>
+            <td>
+                <img src="./plots/result/image2image_translation.png" alt="Horse to Zebra and Zebra to Horse Translation" style="width: 50rem"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+# Assessment of Model Quality
+
+<ul>
+    <li>
+        Fréchet Inception Distance (FID):
+    </li>
+</ul>
+
+<table style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+    <tbody>
+        <tr>
+            <td>
+                <img src="./plots/training/FID.png" alt="Assessment of model quality with FID" style="width: 50rem"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+# Pretrained Models
+
+<ul>
+    <li>
+        <a href="https://drive.google.com/drive/folders/1zCX6SfGKLF9ONZoPyRzd9B8PQtp7xJed?usp=sharing">
+            Pretrained Models
+        </a>
+    </li>
+</ul>
+
+# References
+
+<ul>
+    <li>
+        <a href="https://arxiv.org/abs/1703.10593?amp=1#:~:text=Unpaired%20Image-to-Image%20Translation%20using%20Cycle-Consistent%20Adversarial%20Networks,-Jun-Yan%20Zhu&text=Image-to-image%20translation%20is,set%20of%20aligned%20image%20pairs.">
+            Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei A. Efros, “Unpaired Image- to-Image Translation using Cycle-Consistent Adversarial Networks”, arXiv:703.10593v7 [cs.CV], Aug. 2020
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouTube-Channel">
+            https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouTube-Channel/tree/master/Computer_Vision/60_CycleGAN_From_Scratch_PyTorch
+        </a>
+    </li>
+</ul>
